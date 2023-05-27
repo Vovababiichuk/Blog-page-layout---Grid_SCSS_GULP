@@ -1,0 +1,15 @@
+.input {
+    padding: var(--offset-xxs) var(--offset-l);
+    width: 100%;
+    background-color: var(--white);
+    border-radius: var(--brs-input);
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: var(--black);
+    border: 0.1rem solid var(--white);
+    transition: var(--transition) border-color;
+
+    &:focus {
+        border-color: var(--accent);
+    }
+}

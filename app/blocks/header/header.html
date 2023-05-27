@@ -1,0 +1,18 @@
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            @@include("blocks/logo/logo.html", {
+                "class": "header__logo",
+                "src": "assets/images/logo.svg"
+            })
+            @@include('blocks/menu/menu.html', {
+                "class": "header__menu"
+            })
+            @@include('blocks/button/button.html', {
+                "class": "header__btn",
+                "style": "border",
+                "text": "Log In"
+            })
+        </div>
+    </div>
+</header>

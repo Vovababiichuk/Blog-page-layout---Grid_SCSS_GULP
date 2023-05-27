@@ -1,0 +1,38 @@
+.btn {
+    $this: &;
+
+    font-family: var(--main-font);
+    font-size: calc(var(--base-font-size) / 10 * 1rem);
+    color: var(--dark);
+    transition: var(--transition) color, var(--transition) background-color, var(--transition) border-color;
+
+    &--style {
+        &_border {
+            border: 0.2rem solid var(--dark);
+            border-radius: var(--brs);
+
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: var(--dark);
+                    color: var(--white);
+                }
+            }
+        }
+
+        &_bg {
+            &-accent {
+                background-color: var(--accent);
+                border-radius: var(--brs-3);
+            }
+        }
+    }
+}
+
+.load-more {
+    display: flex;
+    justify-content: center;
+
+    &__btn {
+        padding: var(--offset-xs) var(--offset-xxl);
+    }
+}

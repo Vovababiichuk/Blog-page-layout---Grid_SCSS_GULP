@@ -1,0 +1,16 @@
+.author {
+    display: flex;
+    align-items: center;
+    gap: var(--offset-xxs);
+
+    &__avatar {
+        flex-shrink: 0;
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+    }
+
+    &__img {
+        border-radius: 50%;
+    }
+}

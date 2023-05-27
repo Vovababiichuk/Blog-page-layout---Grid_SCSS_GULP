@@ -1,0 +1,12 @@
+<div class="author@@if(context.class){ @@class}@@if(context.style){ author--style_@@style}">
+    @@include('blocks/img/img.html', {
+        "pictureClass": "author__avatar",
+        "class": "author__img",
+        "cover": true,
+        "src": "@@avatar",
+        "format": "png",
+        "width": "32",
+        "height": "32"
+    })
+    <span class="author__name">@@name</span>
+</div>

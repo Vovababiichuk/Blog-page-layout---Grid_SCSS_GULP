@@ -1,0 +1,26 @@
+.subscribe {
+    &__body {
+        @include padding-y(var(--section-padding));
+        background-color: var(--dark);
+        color: var(--white);
+        border-radius: var(--brs-xs);
+    }
+
+	// .subscribe__body
+	&__inner {
+        display: grid;
+        row-gap: var(--offset-xls);
+        justify-items: center;
+        text-align: center;
+        max-width: calc(71.6rem + var(--container-padding) * 2);
+        @include padding-x(var(--container-padding));
+        margin: 0 auto;
+	}
+
+    &__form {
+        @media(min-width: 768px) {
+            width: 60.4rem;
+        }
+    }
+}
+

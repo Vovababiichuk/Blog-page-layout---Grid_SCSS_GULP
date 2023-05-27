@@ -1,0 +1,59 @@
+:root {
+    // Цвета
+    --white: #fff;
+    --black: #000;
+    --dark: #0A2640;
+    --accent: #65E4A3;
+    --gray: #777;
+
+    --container-width: 120rem;
+    --container-padding: 1.5rem;
+
+    // Отступы (гэпы)
+    --gap: 5rem;
+    --gap-l: 7.2rem;
+    --gap-xl: 8rem;
+    --gap-xxl: 9.6rem;
+    --gap-xxxl: 12.4rem;
+
+    @media(max-width: 1024px) {
+        --gap: 2.5rem;
+        --gap-l: 3.6rem;
+        --gap-xl: 4rem;
+        --gap-xxl: 4.8rem;
+        --gap-xxxl: 12.2rem;
+    }
+
+    --offset-xxxs: 0.8rem;
+    --offset-xxs: 1.2rem;
+    --offset-xs: 1.6rem;
+    --offset-s: 2rem;
+    --offset-m: 2.4rem;
+    --offset-l: 3.2rem;
+    --offset-xl: 4rem;
+    --offset-xls: 4.8rem;
+    --offset-xxl: 5.6rem;
+
+    --section-padding: var(--gap-l);
+    --section-padding_xl: var(--gap-xl);
+    --section-padding_xxl: var(--gap-xxl);
+    --section-padding_xxxl: var(--gap-xxxl);
+
+    --brs-xs: 1.2rem;
+    --brs: 2.4rem;
+    --brs-2: 12rem;
+    --brs-3: 5.6rem;
+    --brs-input: 24rem;
+
+    // Типографика
+    --base-font-size: 16; // базовый размер шрифта
+    --main-font: 'Open Sans', sans-serif; // основной шрифт
+    --alt-font: 'Manrope', sans-serif;
+    --color-default: var(--dark); // дефолтный цвет
+
+    // Анимация
+    --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+    --duration: 0.3s;
+    --delay: var(--duration);
+    --transition: var(--duration) var(--transition-timing);
+}

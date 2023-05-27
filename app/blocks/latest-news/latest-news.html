@@ -1,0 +1,17 @@
+<aside class="latest-news@@if(context.class){ @@class}@@if(context.style){ latest-news--style_@@style}">
+    <div class="container container--narrow">
+        <div class="section-top">
+            <h2 class="title">Latest news</h2>
+        </div>
+        <div class="grid-row">
+            @@loop('blocks/article/article.html', "../resources/assets/news.json")
+        </div>
+        <div class="load-more">
+            @@include('blocks/button/button.html', {
+                "style": "border",
+                "class": "load-more__btn",
+                "text": "Load more"
+            })
+        </div>
+    </div>
+</aside>

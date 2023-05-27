@@ -1,0 +1,11 @@
+<form action="#" class="subscribe-form@@if(context.class){ @@class}@@if(context.style){ subscribe-form--style_@@style}">
+    <label class="field">
+        <input class="input" type="email" name="email" placeholder="Your email address">
+    </label>
+    @@include('blocks/button/button.html', {
+        "type": "submit",
+        "style": "bg-accent",
+        "class": "subscribe-form__btn",
+        "text": "Start now"
+    })
+</form>

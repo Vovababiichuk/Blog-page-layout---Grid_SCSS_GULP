@@ -1,0 +1,85 @@
+<footer class="footer">
+	<div class="container">
+		<div class="footer__inner">
+            <div class="footer__aside">
+                @@include("blocks/logo/logo.html", {
+                    "class": "footer__logo",
+                    "src": "assets/images/logo.svg"
+                })
+                <p class="footer__text">
+                    Social media validation business model canvas graphical user interface launch party creative facebook iPad twitter.
+                </p>
+                <p class="footer__copyright">
+                    All rights reserved.
+                </p>
+            </div>
+            <div class="footer__menu footer__menu--1">
+                <span class="footer__title">Landings</span>
+                <ul class="footer__menu-list">
+                    @@loop('blocks/button/button.html', [{
+                        "href": "#",
+                        "listItem": true,
+                        "class": 'footer__menu-link',
+                        "text": "Home"
+                    }, {
+                        "href": "#",
+                        "listItem": true,
+                        "class": 'footer__menu-link',
+                        "text": "Products"
+                    }, {
+                        "href": "#",
+                        "listItem": true,
+                        "class": 'footer__menu-link',
+                        "text": "Services"
+                    }])
+                </ul>
+            </div>
+            <div class="footer__menu footer__menu--2">
+                <span class="footer__title">Company</span>
+                <ul class="footer__menu-list">
+                    @@loop('blocks/button/button.html', [{
+                        "href": "#",
+                        "listItem": true,
+                        "class": 'footer__menu-link',
+                        "text": "Home"
+                    }, {
+                        "href": "#",
+                        "listItem": true,
+                        "listItemClass": "footer__menu-item",
+                        "class": 'footer__menu-link',
+                        "text": "Careers",
+                        "badge": {
+                            "text": "Hiring!"
+                        }
+                    }, {
+                        "href": "#",
+                        "listItem": true,
+                        "class": 'footer__menu-link',
+                        "text": "Services"
+                    }])
+                </ul>
+            </div>
+            <div class="footer__menu footer__menu--3">
+                <span class="footer__title">Resources</span>
+                <ul class="footer__menu-list">
+                    @@loop('blocks/button/button.html', [{
+                        "href": "#",
+                        "listItem": true,
+                        "class": 'footer__menu-link',
+                        "text": "Blog"
+                    }, {
+                        "href": "#",
+                        "listItem": true,
+                        "class": 'footer__menu-link',
+                        "text": "Products"
+                    }, {
+                        "href": "#",
+                        "listItem": true,
+                        "class": 'footer__menu-link',
+                        "text": "Services"
+                    }])
+                </ul>
+            </div>
+        </div>
+	</div>
+</footer>

@@ -1,0 +1,33 @@
+<article class="article@@if(context.class){ @@class}@@if(context.style){ article--style_@@style}">
+    @@include('blocks/img/img.html', {
+        "pictureClass": "article__picture",
+        "cover": "true",
+        "class": "article__img",
+        "src": "@@img.src",
+        "width": "@@img.width",
+        "height": "@@img.height",
+        "format": "png"
+    })
+    <div class="article__content">
+        <div class="article__wrap">
+            <a href="#" class="article__category">@@category</a>
+            @@include('blocks/datetime/datetime.html', {
+                "class": "article__date",
+                "datetime": "@@datetime",
+                "date": "@@date"
+            })
+        </div>
+        <@@if(context.href){h3}@@if(!context.href){div} class="article__title">
+            @@if(context.href){
+                <a href="@@href" class="full-link">@@title</a>
+            }
+            @@if(!context.href){
+                @@title
+            }
+        </@@if(context.href){h3}@@if(!context.href){div}>
+        @@include('blocks/author/author.html', {
+            "avatar": "@@author.avatar",
+            "name": "@@author.name"
+        })
+    </div>
+</article>

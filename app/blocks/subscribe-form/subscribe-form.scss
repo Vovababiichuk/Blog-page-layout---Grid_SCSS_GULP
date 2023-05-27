@@ -1,0 +1,13 @@
+.subscribe-form {
+	display: grid;
+    gap: var(--offset-m);
+
+    &__btn {
+        padding: var(--offset-xs) var(--offset-xxl);
+    }
+
+    @media(min-width: 768px) {
+        grid-template-columns: 1fr max-content;
+    }
+}
+
