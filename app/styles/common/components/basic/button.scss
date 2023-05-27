@@ -10,6 +10,7 @@
         &_border {
             border: 0.2rem solid var(--dark);
             border-radius: var(--brs);
+            font-weight: 700;
 
             @media (any-hover: hover) {
                 &:hover {
@@ -23,6 +24,7 @@
             &-accent {
                 background-color: var(--accent);
                 border-radius: var(--brs-3);
+                font-weight: 700;
             }
         }
     }
@@ -34,5 +36,6 @@
 
     &__btn {
         padding: var(--offset-xs) var(--offset-xxl);
+        border-radius: var(--brs-3);
     }
 }

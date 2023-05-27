@@ -1,6 +1,8 @@
 .article {
     $this: &; // .article
 
+    position: relative;
+
     &__picture {
         display: block;
         height: 21rem;
